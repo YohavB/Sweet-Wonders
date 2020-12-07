@@ -1,38 +1,173 @@
 .App {
   text-align: center;
+  display: block;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*nav bar*/
+.app-header {
+  height: 5vw;
+  min-height: 30px;
+  max-height: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.nav {
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: clamp(10px, 3vw, 32px);
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav div {
+  height: 100%;
+  width: 100%;
+  border-right: 0.2vw solid rgb(92, 65, 65);
+  transition: 0.3s;
+}
+
+.nav div:last-child {
+  border-right: none;
+}
+
+.nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav div:hover {
+  background-color: rgb(92, 65, 65);
+  color: #fffff1;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(92, 65, 65);
+  color: #fffff1;
+}
+
+/*view*/
+
+.appView {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.pageView {
+  height: 100vh;
+  border: 1px solid blue;
+  min-width: 100%;
+  transition: 1s;
+}
+
+/*home*/
+.home {
+  height: auto;
+}
+.titleandsocial {
+  overflow: hidden;
+  background-image: url("./image/sweet6.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40vh;
+  background-size: cover;
+  color: #fffff1;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: clamp(20px, 12vw, 100px);
+  border-bottom: 2px solid #fffff1;
+  margin: 10px;
+}
+
+.desc {
+  font-size: clamp(20px, 4vw, 40px);
+  border-bottom: 2px solid #fffff1;
+  margin: 10px;
+}
+
+.social {
+  padding: 0;
+  width: 40vw;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.icon {
+  height: clamp(50px, 5vw, 40px);
+  width: clamp(25px, 5vw, 40px);
+  filter: grayscale();
+  transition: 0.3s;
+}
+
+.icon:hover {
+  filter: none;
+}
+
+.story {
+  font-size: clamp(20px, 2.5vw, 40px);
+  padding-top: 40px;
+  width: 60%;
+  margin: auto;
+}
+
+/*salt*/
+.title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.subTitle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.product {
+  margin-top: 10px;
+  font-weight: 550;
+}
+
+/*gallery*/
+.gallery {
+  height: auto;
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
