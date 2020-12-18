@@ -7,13 +7,13 @@ export class Sweet extends Component {
     return (
       <section  >
         <div className="sweet">
-          <div className="title">Menu Sucre</div>
-          <div className="subTitle">Creme glace</div>
+          <div className="title">Menu Sucré</div>
+          <div className="subTitle">Crème glacé</div>
           <div>
             {Data.icecream &&
-              Data.icecream.map((item) => {
+              Data.icecream.map((item, index ) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <div className="product">
                       {item.product} &bull; {item.quantity}
                     </div>
@@ -25,10 +25,10 @@ export class Sweet extends Component {
           <div className="subTitle">Sorbet</div>
           <div>
             {Data.sorbet &&
-              Data.sorbet.map((item) => {
+              Data.sorbet.map((item, index) => {
                 return (
-                  <div>
-                  <div className="product">
+                  <div key={index}>
+                  <div className="product" >
                     {item.product} &bull; {item.quantity}
                   </div>
                   {item.price}
@@ -36,13 +36,13 @@ export class Sweet extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Specialite</div>
+          <div className="subTitle">Spécialité</div>
           <div>
             {Data.speciality &&
-              Data.speciality.map((item) => {
+              Data.speciality.map((item, index ) => {
                 return (
-                  <div>
-                  <div className="product">
+                  <div key={index}>
+                  <div className="product" >
                     {item.product} &bull; {item.quantity}
                   </div>
                   {item.price}
@@ -50,13 +50,13 @@ export class Sweet extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Evenement</div>
+          <div className="subTitle">Évènement</div>
           <div>
             {Data.event &&
-              Data.event.map((item) => {
+              Data.event.map((item,index) => {
                 return (
-                  <div>
-                  <div className="product">
+                  <div key={index}>
+                  <div className="product" >
                     {item.product} &bull; {item.quantity}
                   </div>
                   {item.price}

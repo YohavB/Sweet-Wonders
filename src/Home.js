@@ -19,7 +19,7 @@ export default class Home extends Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img className="icon" src={item.icon} alt={item.name} />
+                      <img className="icon" src={item.icon} alt={item.name}  title={item.text} />
                     </a>
                   </li>
                 );

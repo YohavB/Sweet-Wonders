@@ -1,6 +1,6 @@
 import whatsapp from "../src/icon/whatsapp.svg";
 import instagram from "../src/icon/instagram.svg";
-import pinterest from "../src/icon/pinterest.svg";
+import phone from "../src/icon/phone.svg";
 
 let Data = {
   imagebaseurl: "http://github.com/YohavB",
@@ -11,19 +11,22 @@ let Data = {
     "Mickaela, pâtissière-chocolatière, a fondé Sweet Wonders pour vous proposer le meilleur de son savoir-faire, à travers ses produits 100% faits maison. Avec une expérience exceptionnelle en pâtisserie et chocolaterie, elle met à portée de vos papilles des produits uniques de qualité. N'hésitez pas à les découvrir.",
   socialLinks: [
     {
-      name: "facebook",
+      name: "whatsapp",
+      text: "Utilisez Whatsapp pour nous contacter !",
       url: "https://api.whatsapp.com/send?phone=972526450395",
       icon: whatsapp,
     },
     {
       name: "instagram",
+      text:"Rejoignez-nous sur Intagram !",
       url: "https://www.instagram.com/Mickaela_patisserie/",
       icon: instagram,
     },
     {
-      name: "gmail",
-      url: "mailto:yohavbenoliel@gmail.com",
-      icon: pinterest,
+      name: "phone",
+      text:"Faites directement votre commande par telephone !",
+      url: "tel:+972526450395",
+      icon: phone,
     },
   ],
 

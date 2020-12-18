@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
 }
 
 .nav {
@@ -35,8 +36,8 @@
 .nav div {
   height: 100%;
   width: 100%;
-  border-right: 0.2vw solid rgb(92, 65, 65);
   transition: 0.3s;
+  border-bottom: 2px solid rgb(92, 65, 65);
 }
 
 .nav div:last-child {
@@ -78,7 +79,6 @@
 
 .pageView {
   height: 100vh;
-  border: 1px solid blue;
   min-width: 100%;
   transition: 1s;
 }
@@ -107,11 +107,13 @@
   font-size: clamp(20px, 12vw, 100px);
   border-bottom: 2px solid #fffff1;
   margin: 10px;
+  font-family: "Dancing Script", cursive;
 }
 
 .desc {
   font-size: clamp(20px, 4vw, 40px);
   border-bottom: 2px solid #fffff1;
+  width: 80%;
   margin: 10px;
 }
 
@@ -142,11 +144,34 @@
 }
 
 /*salt*/
+
+.salt {
+  background-color: rgb(92, 65, 65);
+  color: #fffff1;
+  margin: 80px auto;
+  width: 50%;
+  border-style: outset;
+  border-width: 5px;
+  padding-bottom: 15px;
+}
+
+.sweet {
+  background-color: rgb(92, 65, 65);
+  color: #fffff1;
+  margin: 80px auto;
+  width: 50%;
+  border-style: outset;
+  border-width: 5px;
+  padding-bottom: 15px;
+}
+
 .title {
-  margin-bottom: 15px;
-  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 50px;
   font-weight: bolder;
   text-decoration: underline;
+  font-family: "Dancing Script", cursive;
 }
 
 .subTitle {
@@ -170,4 +195,80 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* Contact */
+.contact {
+  background-color: rgb(92, 65, 65);
+  color: #de9a9a;
+  margin: 80px auto;
+  max-width: 600px;
+  width: 100%;
+  border-style: outset;
+  border-width: 5px;
+  padding-bottom: 15px;
+
+  
+}
+
+
+.form {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > div {
+  margin-bottom: 30px;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); 
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  background: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 2px solid #de9a9a;
+}
+
+.form > textarea {
+  width: 100%;
+  margin: auto;
+  height: 150px;
+  max-width: 400px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.form > button {
+  
+  padding: 20px;
+  border: none;
+  background-color: #de9a9a;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fffff1;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+.form > button:hover {
+  background-color: rgb(154, 154, 223);
 }

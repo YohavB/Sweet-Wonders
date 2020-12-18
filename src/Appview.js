@@ -15,30 +15,13 @@ export default function Test(props) {
     <Salt Data={Data} />,
     <Sweet Data={Data} />,
     <Gallery InstaData={InstaData} />,
-    <Contact Data={Data} InstaData={InstaData} />,
+    <Contact Data={Data} />,
   ];
 
   const [x, setX] = useState(0);
 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-
-  const toTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const goHome = () => {
     setX(0);
-    topFunction();
-    toTop();
-    scrollTop();
   };
 
   const goSalt = () => {
@@ -47,7 +30,6 @@ export default function Test(props) {
 
   const goSweet = () => {
     setX(-200);
-    scrollTop();
   };
 
   const goContact = () => {
@@ -57,6 +39,7 @@ export default function Test(props) {
   const goGalerie = () => {
     setX(-300);
   };
+  
 
   return (
     <div>
@@ -103,6 +86,7 @@ export default function Test(props) {
         {sliderArr.map((item, index) => {
           return (
             <div
+           
               key={index}
               className="pageView"
               style={{ transform: `translateX(${x}%)` }}

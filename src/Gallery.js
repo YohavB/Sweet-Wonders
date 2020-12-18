@@ -7,9 +7,9 @@ class Gallery extends Component {
     return (
       <div className="gallery">
         {InstaData &&
-          InstaData.map((item) => {
+          InstaData.map((item, index) => {
             return (
-              <div className="insta">
+              <div className="insta" key={index}>
                 <blockquote
                   className="instagram-media"
                   data-instgrm-permalink={`https://www.instagram.com/p/${item}/`}

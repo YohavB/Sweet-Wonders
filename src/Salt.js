@@ -5,14 +5,14 @@ export class Salt extends Component {
     let Data = this.props.Data;
     return (
      
-        <div className="salt">
-          <div className="title">Menu Sale</div>
+        <div className="salt" >
+          <div className="title">Menu Salé</div>
           <div className="subTitle">Plateaux</div>
           <div>
             {Data.tray &&
-              Data.tray.map((item) => {
+              Data.tray.map((item, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <div className="product">
                       {item.product} &bull; {item.quantity}
                     </div>
@@ -21,13 +21,13 @@ export class Salt extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Pates</div>
+          <div className="subTitle">Pâtes</div>
           <div>
             {Data.pasta &&
-              Data.pasta.map((item) => {
+              Data.pasta.map((item, index) => {
                 return (
-                  <div>
-                    <div className="product">
+                  <div key={index}>
+                    <div className="product" >
                       {item.product} &bull; {item.quantity}
                     </div>
                     {item.price}
@@ -38,9 +38,9 @@ export class Salt extends Component {
           <div className="subTitle">Pizza</div>
           <div>
             {Data.pizza &&
-              Data.pizza.map((item) => {
+              Data.pizza.map((item, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <div className="product">
                       {item.product} &bull; {item.quantity}
                     </div>
