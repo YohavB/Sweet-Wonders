@@ -17,7 +17,7 @@ const logout = () => {
 
 export default function Adminview() {
   return <div>Salut
-
+<hr/>
       <button onClick={logout}>logout</button>
   </div>;
 }
