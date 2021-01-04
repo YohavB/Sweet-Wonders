@@ -11,7 +11,7 @@ const MenuSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    required: true,
+  
   },
   quantity: {
     type: Number,

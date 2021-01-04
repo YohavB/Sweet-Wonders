@@ -13,6 +13,7 @@
 
 /*nav bar*/
 .app-header {
+  z-index: 5;
   height: 5vw;
   min-height: 30px;
   max-height: 50px;

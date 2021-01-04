@@ -61,17 +61,19 @@ app.put("/update", async (req, res) => {
       id,
       (
         err,
-        updatedFood,
-        updatedPrice,
-        updatedCategory,
-        updatedQuantity,
-        updatedUnits
+        {
+          updatedFood,
+          updatedPrice,
+          updatedCategory,
+          updatedQuantity,
+          updatedUnits,
+        }
       ) => {
         updatedFood.foodName = newFoodName;
-        updatedPrice.foodName = newPrice;
-        updatedCategory.foodName = newCategory;
-        updatedQuantity.foodName = newQuantity;
-        updatedUnits.foodName = newUnits;
+        updatedPrice.price = newPrice;
+        updatedCategory.category = newCategory;
+        updatedQuantity.quantity = newQuantity;
+        updatedUnits.units = newUnits;
 
         updatedFood.save();
         updatedPrice.save();
