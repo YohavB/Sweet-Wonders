@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { useSwipeable } from "react-swipeable";
+
 import Home from "./Home";
 import Salt from "./Salt";
 import Sweet from "./Sweet";
@@ -32,17 +34,29 @@ export default function Test(props) {
     setX(-200);
   };
 
+  const goGalerie = () => {
+    setX(-300);
+  };
+
   const goContact = () => {
     setX(-400);
   };
 
-  const goGalerie = () => {
-    setX(-300);
-  };
-  
+  const handlers = useSwipeable({
+    onSwipedRight: () => {
+      x === 0 ? setX(x) : setX(x + 100);
+      console.log(x);
+    },
+    onSwipedLeft: () => {
+      x === -400 ? setX(x) : setX(x - 100);
+      console.log(x);
+    },
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
 
   return (
-    <div>
+    <div {...handlers}>
       <div className="app-header">
         <div id="nav" className="nav">
           <div
@@ -86,7 +100,6 @@ export default function Test(props) {
         {sliderArr.map((item, index) => {
           return (
             <div
-           
               key={index}
               className="pageView"
               style={{ transform: `translateX(${x}%)` }}

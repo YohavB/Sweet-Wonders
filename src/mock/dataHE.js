@@ -1,10 +1,10 @@
-import whatsapp from "../src/icon/whatsapp.svg";
-import instagram from "../src/icon/instagram.svg";
-import phone from "../src/icon/phone.svg";
+import whatsapp from "../icon/whatsapp.svg";
+import instagram from "../icon/instagram.svg";
+import phone from "../icon/phone.svg";
 
 let Data = {
   imagebaseurl: "http://github.com/YohavB",
-  name: "Sweet Wonders",
+  name: "Sweet Wonders en hebreu",
   description:
     "CRÈMES GLACÉES, SORBETS, CHOUX A LA CRÈME, CHOCOLATS, 100% FAITS MAISON",
   story:
