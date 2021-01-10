@@ -1,33 +1,46 @@
 import React, { Component } from "react";
-import InstagramEmbed from "react-instagram-embed";
+
+import SweetGallery from "./SweetGallery";
+import SaltyGallery from "./SaltyGallery";
+
+import sweeticon from "./image/sweet.png";
+import salticon from "./image/salty.png";
 
 class Gallery extends Component {
-  render() {
-    let InstaData = this.props.InstaData;
+  constructor(props) {
+    super(props);
+    this.state = {
+      gallery: null,
+    };
+  }
 
+  renderGallery = () => {
+    if (this.state.gallery === null) {
+      return null;
+    }
+    return this.state.gallery ? <SweetGallery /> : <SaltyGallery />;
+  };
+
+  render() {
     return (
       <div className="gallery">
-        {InstaData &&
-          InstaData.map((item, index) => {
-            return (
-              <div className="insta" key={index}>
-                  <InstagramEmbed
-          url={`https://instagr.am/p/${item}/`}
-          clientAccessToken="3967631443289067|73c0233d80cce43add4b40ac86736bc6"
-          maxWidth={320}
-          hideCaption={true}
-          containerTagName="div"
-          protocol=""
-          injectScript
-          onLoading={() => {}}
-          onSuccess={() => {}}
-          onAfterRender={() => {}}
-          onFailure={() => {}}
-        />
-              </div>
-            );
-          })}
-    
+        <div className="gallery-header">
+          <img
+            className="gallery-button"
+            src={sweeticon}
+            alt="Check our Sweet Gallery"
+            title="Check our Sweet Gallery !"
+            onClick={() => this.setState({ gallery: true })}
+          />
+          <img
+            className="gallery-button"
+            src={salticon}
+            alt="Check our Salty Gallery"
+            title="Check our Salty Gallery !"
+            onClick={() => this.setState({ gallery: false })}
+          />
+        </div>
+        {this.renderGallery()}
       </div>
     );
   }
