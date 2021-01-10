@@ -3,28 +3,27 @@ import instagram from "../icon/instagram.svg";
 import phone from "../icon/phone.svg";
 
 let Data = {
-  imagebaseurl: "http://github.com/YohavB",
-  name: "Sweet Wonders en anglais",
+  name: "Sweet Wonders",
   description:
-    "CRÈMES GLACÉES, SORBETS, CHOUX A LA CRÈME, CHOCOLATS, 100% FAITS MAISON",
+    "ICE CREAMS, SORBETS, CREAM PUFFS, CHOCOLATES, 100% HOMEMADE",
   story:
-    "Mickaela, pâtissière-chocolatière, a fondé Sweet Wonders pour vous proposer le meilleur de son savoir-faire, à travers ses produits 100% faits maison. Avec une expérience exceptionnelle en pâtisserie et chocolaterie, elle met à portée de vos papilles des produits uniques de qualité. N'hésitez pas à les découvrir.",
+    "Mickaela, pastry-chocolate maker, founded Sweet Wonders to offer you the best of her know-how, through her 100% homemade products. With an exceptional experience in pastry and chocolate making, she brings unique quality products to your taste buds. Do not hesitate to discover them.",
   socialLinks: [
     {
       name: "whatsapp",
-      text: "Utilisez Whatsapp pour nous contacter !",
+      text: "Contact us directly with Whatsapp !",
       url: "https://api.whatsapp.com/send?phone=972526450395",
       icon: whatsapp,
     },
     {
       name: "instagram",
-      text:"Rejoignez-nous sur Intagram !",
+      text:"Join us on Intagram !",
       url: "https://www.instagram.com/Mickaela_patisserie/",
       icon: instagram,
     },
     {
       name: "phone",
-      text:"Faites directement votre commande par telephone !",
+      text:"Make your order with me on the phone !",
       url: "tel:+972526450395",
       icon: phone,
     },
@@ -32,17 +31,17 @@ let Data = {
 
   icecream: [
     {
-      product: "Chocolat au lait",
+      product: "Milk chocolate",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Chocolat noir",
+      product: "Black chocolate",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Vanille de Madasgacar",
+      product: "Madagascar vanilla",
       quantity: "1 litre",
       price: "70₪",
     },
@@ -50,32 +49,32 @@ let Data = {
 
   sorbet: [
     {
-      product: "Fraise",
+      product: "Strawberry",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Framboise",
+      product: "Raspberry",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Pêche sanguine",
+      product: "Blood peach",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Citron",
+      product: "Lemon",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Goyave",
+      product: "Guava",
       quantity: "1 litre",
       price: "70₪",
     },
     {
-      product: "Mangue",
+      product: "Mango",
       quantity: "1 litre",
       price: "70₪",
     },
@@ -88,7 +87,7 @@ let Data = {
       price: "90₪",
     },
     {
-      product: "Pistache",
+      product: "Pistachio",
       quantity: "1 litre",
       price: "90₪",
     },
@@ -96,7 +95,7 @@ let Data = {
 
   event: [
     {
-      product: "Corbeille de choux",
+      product: "Basket of cream puffs",
       quantity: "30 pieces (10 personnes)",
       price: "200₪",
     },
@@ -109,27 +108,27 @@ let Data = {
 
   tray: [
     {
-      product: "Mimi Pizza",
+      product: "Mini Pizza",
       quantity: "40 pieces",
       price: "120₪",
     },
     {
-      product: "Mini Navettes Thon-Mayo",
+      product: "Mini Tuna-Mayo Buns",
       quantity: "30 pieces",
       price: "120₪",
     },
     {
-      product: "Mini Navettes Saumon",
+      product: "Mini Salmon Buns",
       quantity: "30 pieces",
       price: "120₪",
     },
     {
-      product: "Club Sandwich Saumon",
+      product: "Salmon Club Sandwich",
       quantity: "30 pieces",
       price: "130₪",
     },
     {
-      product: "Club Sandwich Thon",
+      product: "Tuna Club Sandwich",
       quantity: "30 pieces",
       price: "130₪",
     },
@@ -139,7 +138,7 @@ let Data = {
       price: "130₪",
     },
     {
-      product: "Mini Brochette de Saumon mariné à la thaïlandaise",
+      product: "Mini Thai Marinated Salmon Skewer",
       quantity: "12 pieces",
       price: "84₪",
     },
@@ -147,38 +146,38 @@ let Data = {
 
   pasta: [
     {
-      product: "Saumon frais et crème au vin",
+      product: "Fresh salmon and wine cream",
       price: "62₪",
     },
     {
-      product: "Crème et poêlée de champignons à l’ail",
+      product: "Cream and pan-fried mushrooms with garlic",
       price: "55₪",
     },
     {
-      product: "Crème au pesto basilique, pignon et parmesan",
+      product: "Basil, pine nut and parmesan pesto cream",
       price: "58₪",
     },
     {
-      product: "Crème à la truffe",
+      product: "Truffle cream",
       price: "62₪",
     },
     {
-      product: "Crème a la patate douce, oignon et herbe de Provence",
+      product: "Sweet potato, onion and Provence herb cream",
       price: "50₪",
     },
   ],
 
   pizza: [
     {
-      product: "Saumon fumé, crème et fromage",
+      product: "Smoked salmon, cream and cheese",
       price: "62₪",
     },
     {
-      product: "Chèvre miel",
+      product: "Goat cheese and honey",
       price: "62₪",
     },
     {
-      product: "4 fromages",
+      product: "4 cheeses",
       price: "65₪",
     },
     {

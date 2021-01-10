@@ -3,8 +3,7 @@ import instagram from "../icon/instagram.svg";
 import phone from "../icon/phone.svg";
 
 let Data = {
-  imagebaseurl: "http://github.com/YohavB",
-  name: "Sweet Wonders en hebreu",
+  name: "Sweet Wonders",
   description:
     "CRÈMES GLACÉES, SORBETS, CHOUX A LA CRÈME, CHOCOLATS, 100% FAITS MAISON",
   story:
@@ -32,76 +31,76 @@ let Data = {
 
   icecream: [
     {
-      product: "Chocolat au lait",
-      quantity: "1 litre",
+      product: "שוקולד חלב",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Chocolat noir",
-      quantity: "1 litre",
+      product: "שוקולד מריר",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Vanille de Madasgacar",
-      quantity: "1 litre",
+      product: "וניל",
+      quantity: "ליטר",
       price: "70₪",
     },
   ],
 
   sorbet: [
     {
-      product: "Fraise",
-      quantity: "1 litre",
+      product: "תות שדה",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Framboise",
-      quantity: "1 litre",
+      product: "פטל",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Pêche sanguine",
-      quantity: "1 litre",
+      product: "אפרסק",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Citron",
-      quantity: "1 litre",
+      product: "לימון",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Goyave",
-      quantity: "1 litre",
+      product: "גויאבה",
+      quantity: "ליטר",
       price: "70₪",
     },
     {
-      product: "Mangue",
-      quantity: "1 litre",
+      product: "מנגו",
+      quantity: "ליטר",
       price: "70₪",
     },
   ],
 
   speciality: [
     {
-      product: "Rocher suchard",
-      quantity: "1 litre",
+      product: "פררו רושה",
+      quantity: "ליטר",
       price: "90₪",
     },
     {
-      product: "Pistache",
-      quantity: "1 litre",
+      product: "פיסטוק",
+      quantity: "ליטר",
       price: "90₪",
     },
   ],
 
   event: [
     {
-      product: "Corbeille de choux",
-      quantity: "30 pieces (10 personnes)",
+      product: "סלסלות קרוקומבוש",
+      quantity: "30 פחזניות קרמל  (10 אנשים)",
       price: "200₪",
     },
     {
-      product: "Ballotins de chocolat:",
+      product: "אריזות שוקולד",
       quantity: "",
       price: "",
     },
@@ -109,37 +108,37 @@ let Data = {
 
   tray: [
     {
-      product: "Mimi Pizza",
+      product: "מיני פיצה",
       quantity: "40 pieces",
       price: "120₪",
     },
     {
-      product: "Mini Navettes Thon-Mayo",
+      product: "מיני כריך טונה מיונז",
       quantity: "30 pieces",
       price: "120₪",
     },
     {
-      product: "Mini Navettes Saumon",
+      product: "מיני כריך סלמון",
       quantity: "30 pieces",
       price: "120₪",
     },
     {
-      product: "Club Sandwich Saumon",
+      product: "מיני קלאב סנדוויץ סלמון",
       quantity: "30 pieces",
       price: "130₪",
     },
     {
-      product: "Club Sandwich Thon",
+      product: "מיני קלאב סנדוויץ טונה",
       quantity: "30 pieces",
       price: "130₪",
     },
     {
-      product: "Mini Quiche",
+      product: "מיני קיש",
       quantity: "30 pieces",
       price: "130₪",
     },
     {
-      product: "Mini Brochette de Saumon mariné à la thaïlandaise",
+      product: "מיני שיפודי סלמון כבושים בסגנון תאילנדי",
       quantity: "12 pieces",
       price: "84₪",
     },
@@ -147,46 +146,46 @@ let Data = {
 
   pasta: [
     {
-      product: "Saumon frais et crème au vin",
+      product: "קרם סלמון ויין טרי",
       price: "62₪",
     },
     {
-      product: "Crème et poêlée de champignons à l’ail",
+      product: "שמנת ופטריות מטוגנות עם שום",
       price: "55₪",
     },
     {
-      product: "Crème au pesto basilique, pignon et parmesan",
+      product: "קרם פסטו בזיליקום, סנובר ופרמזן",
       price: "58₪",
     },
     {
-      product: "Crème à la truffe",
+      product: "קרם כמהין",
       price: "62₪",
     },
     {
-      product: "Crème a la patate douce, oignon et herbe de Provence",
+      product: "קרם בטטה ,בצל ועשבי תיבול",
       price: "50₪",
     },
   ],
 
   pizza: [
     {
-      product: "Saumon fumé, crème et fromage",
+      product: "סלמון מעושן, שמנת וגבינה",
       price: "62₪",
     },
     {
-      product: "Chèvre miel",
+      product: "גבינת עזים ודבש",
       price: "62₪",
     },
     {
-      product: "4 fromages",
+      product: "4 גבינות",
       price: "65₪",
     },
     {
-      product: "Margarita",
+      product: "מרגריטה",
       price: "40₪",
     },
     {
-      product: "Pissaladière",
+      product: "פיצת בצל ואנשובי",
       price: "40₪",
     },
   ],

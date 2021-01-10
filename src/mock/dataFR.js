@@ -4,7 +4,6 @@ import phone from "../icon/phone.svg";
 
 
 let Data = {
-  imagebaseurl: "http://github.com/YohavB",
   name: "Sweet Wonders",
   description:
     "CRÈMES GLACÉES, SORBETS, CHOUX A LA CRÈME, CHOCOLATS, 100% FAITS MAISON",
@@ -110,7 +109,7 @@ let Data = {
 
   tray: [
     {
-      product: "Mimi Pizza",
+      product: "Mini Pizza",
       quantity: "40 pieces",
       price: "120₪",
     },
