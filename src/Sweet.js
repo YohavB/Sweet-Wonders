@@ -7,8 +7,8 @@ export class Sweet extends Component {
     return (
       <section  >
         <div className="sweet">
-          <div className="title">Menu Sucré</div>
-          <div className="subTitle">Crème glacé</div>
+          <div className="title">{Data.sweetMenu}</div>
+          <div className="subTitle">{Data.icecreamName}</div>
           <div>
             {Data.icecream &&
               Data.icecream.map((item, index ) => {
@@ -22,7 +22,7 @@ export class Sweet extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Sorbet</div>
+          <div className="subTitle">{Data.sorbetName}</div>
           <div>
             {Data.sorbet &&
               Data.sorbet.map((item, index) => {
@@ -36,7 +36,7 @@ export class Sweet extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Spécialité</div>
+          <div className="subTitle">{Data.specialityName}</div>
           <div>
             {Data.speciality &&
               Data.speciality.map((item, index ) => {
@@ -50,7 +50,7 @@ export class Sweet extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Évènement</div>
+          <div className="subTitle">{Data.eventName}</div>
           <div>
             {Data.event &&
               Data.event.map((item,index) => {

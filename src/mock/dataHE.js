@@ -5,25 +5,52 @@ import phone from "../icon/phone.svg";
 let Data = {
   name: "Sweet Wonders",
   description:
-    "CRÈMES GLACÉES, SORBETS, CHOUX A LA CRÈME, CHOCOLATS, 100% FAITS MAISON",
-  story:
-    "Mickaela, pâtissière-chocolatière, a fondé Sweet Wonders pour vous proposer le meilleur de son savoir-faire, à travers ses produits 100% faits maison. Avec une expérience exceptionnelle en pâtisserie et chocolaterie, elle met à portée de vos papilles des produits uniques de qualité. N'hésitez pas à les découvrir.",
+    "גלידות, סורבטים, פחזניות, שוקולדים - 100% תוצרת בית! ",
+  story:"  מיקאלה, קונדיטורית ובעלת העסק Sweet Wonders מציעה לכם רגעים מתוקים באמצעות מוצרים איכותיים וייחודיים, 100% תוצרת בית. מוזמנים לטעום ולהנות! ",
+  
+  home: "בית",
+
+  saltyMenu: "תפריט מלוח",
+  trayName: "מגשים",
+  pastaName: "פסטות",
+  pizzaName: "פיצות",
+
+  sweetMenu: "תפריט מתוק",
+  icecreamName: "גלידות",
+  sorbeNamet: "סורבטים",
+  specialityName: "המיוחדים שלנו",
+  eventName: "אירועים",
+
+  gallery: "גלריה",
+
+  contact: "דברו איתנו",
+  nameForm: "שם",
+  emailForm: "אימייל",
+  phoneForm: "טלפון",
+  eventForm: "סוג האירוע ?",
+  breakfast: "ארוחת בוקר",
+  birthday:"יום הולדת",
+  engagement: "אירוסין",
+  other: "אחר",
+  message: "הודעה",
+  submit: "שליחה",
+
   socialLinks: [
     {
       name: "whatsapp",
-      text: "Utilisez Whatsapp pour nous contacter !",
+      text: "דברו איתנו ישירות מהווטסאפ !",
       url: "https://api.whatsapp.com/send?phone=972526450395",
       icon: whatsapp,
     },
     {
       name: "instagram",
-      text:"Rejoignez-nous sur Intagram !",
+      text:"צטרפו אלינו באינסטגרם !",
       url: "https://www.instagram.com/Mickaela_patisserie/",
       icon: instagram,
     },
     {
       name: "phone",
-      text:"Faites directement votre commande par telephone !",
+      text:"קבלו הצעת מחיר ותזמינו בשיחה טלפונית !",
       url: "tel:+972526450395",
       icon: phone,
     },

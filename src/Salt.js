@@ -6,8 +6,8 @@ export class Salt extends Component {
     return (
      
         <div className="salt" >
-          <div className="title">Menu Salé</div>
-          <div className="subTitle">Plateaux</div>
+          <div className="title">{Data.saltyMenu}</div>
+          <div className="subTitle">{Data.trayName}</div>
           <div>
             {Data.tray &&
               Data.tray.map((item, index) => {
@@ -21,7 +21,7 @@ export class Salt extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Pâtes</div>
+          <div className="subTitle">{Data.pastaName}</div>
           <div>
             {Data.pasta &&
               Data.pasta.map((item, index) => {
@@ -35,7 +35,7 @@ export class Salt extends Component {
                 );
               })}
           </div>
-          <div className="subTitle">Pizza</div>
+          <div className="subTitle">{Data.pizzaName}</div>
           <div>
             {Data.pizza &&
               Data.pizza.map((item, index) => {

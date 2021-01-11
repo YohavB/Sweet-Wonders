@@ -64,35 +64,35 @@ export default function Test(props) {
             href="#home"
             onClick={goHome}
           >
-            Home
+            {Data.home}
           </div>
           <div
             className={x === -100 ? "active" : "null"}
             href="#salt"
             onClick={goSalt}
           >
-            Menu Salé
+            {Data.saltyMenu}
           </div>
           <div
             className={x === -200 ? "active" : "null"}
             href="#sweet"
             onClick={goSweet}
           >
-            Menu Sucré
+          {Data.sweetMenu}
           </div>
           <div
             className={x === -300 ? "active" : "null"}
             href="#galerie"
             onClick={goGalerie}
           >
-            Galerie
+            {Data.gallery}
           </div>
           <div
             className={x === -400 ? "active" : "null"}
             href="#contact"
             onClick={goContact}
           >
-            Contact
+            {Data.contact}
           </div>
         </div>
       </div>

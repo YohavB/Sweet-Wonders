@@ -8,7 +8,36 @@ let Data = {
     "ICE CREAMS, SORBETS, CREAM PUFFS, CHOCOLATES, 100% HOMEMADE",
   story:
     "Mickaela, pastry-chocolate maker, founded Sweet Wonders to offer you the best of her know-how, through her 100% homemade products. With an exceptional experience in pastry and chocolate making, she brings unique quality products to your taste buds. Do not hesitate to discover them.",
-  socialLinks: [
+ 
+    home: "Home",
+
+    saltyMenu: "Salty Menu",
+    trayName: "Tray",
+    pastaName: "Pasta",
+    pizzaName: "Pizza",
+  
+    sweetMenu: "Sweet Menu",
+    icecreamName: "Ice Cream",
+    sorbeNamet: "Sorbet",
+    specialityName: "Speciality",
+    eventName: "Events",
+  
+    gallery: "Gallery",
+  
+    contact: "Contact",
+    contactus:"Contact Us",
+    nameForm: "Name",
+    emailForm: "Email",
+    phoneForm: "Phone",
+    eventForm: "Which event do you planning ?",
+    breakfast: "Breakfast",
+    birthday:"Birthday",
+    engagement: "Engagement",
+    other: "Other",
+    message: "Message",
+    submit: "Submit",
+  
+    socialLinks: [
     {
       name: "whatsapp",
       text: "Contact us directly with Whatsapp !",

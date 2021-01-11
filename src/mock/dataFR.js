@@ -2,13 +2,41 @@ import whatsapp from "../icon/whatsapp.svg";
 import instagram from "../icon/instagram.svg";
 import phone from "../icon/phone.svg";
 
-
 let Data = {
   name: "Sweet Wonders",
   description:
     "CRÈMES GLACÉES, SORBETS, CHOUX A LA CRÈME, CHOCOLATS, 100% FAITS MAISON",
   story:
     "Mickaela, pâtissière-chocolatière, a fondé Sweet Wonders pour vous proposer le meilleur de son savoir-faire, à travers ses produits 100% faits maison. Avec une expérience exceptionnelle en pâtisserie et chocolaterie, elle met à portée de vos papilles des produits uniques de qualité. N'hésitez pas à les découvrir.",
+
+  home: "Acceuil",
+
+  saltyMenu: "Menu Salé",
+  trayName: "Plateaux",
+  pastaName: "Pâtes",
+  pizzaName: "Pizza",
+
+  sweetMenu: "Menu Sucré",
+  icecreamName: "Crème glacé",
+  sorbeNamet: "Sorbet",
+  specialityName: "Spécialité",
+  eventName: "Évènements",
+
+  gallery: "Galerie",
+
+  contact: "Contact",
+  contactus: "Contactez-Nous",
+  nameForm: "Nom",
+  emailForm: "Email",
+  phoneForm: "Téléphone",
+  eventForm: "Pour quel type d'événement ?",
+  breakfast: "Petit Déjeuner",
+  birthday: "Anniversaire",
+  engagement: "Fiançailles",
+  other: "Autre",
+  message: "Message",
+  submit: "Envoyer",
+
   socialLinks: [
     {
       name: "whatsapp",
@@ -18,13 +46,13 @@ let Data = {
     },
     {
       name: "instagram",
-      text:"Rejoignez-nous sur Intagram !",
+      text: "Rejoignez-nous sur Intagram !",
       url: "https://www.instagram.com/Mickaela_patisserie/",
       icon: instagram,
     },
     {
       name: "phone",
-      text:"Faites directement votre commande par telephone !",
+      text: "Faites directement votre commande par telephone !",
       url: "tel:+972526450395",
       icon: phone,
     },
