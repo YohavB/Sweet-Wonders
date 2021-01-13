@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { firebaseApp } from "../firebase/config";
+import { firebaseConfig} from "../firebase/config";
 
 const Contact = (props) => {
   let Data = props.Data;
@@ -16,7 +16,7 @@ const Contact = (props) => {
     e.preventDefault();
     setLoader(true);
 
-    firebaseApp.collection("contact")
+    firebaseConfig.collection("contact")
       .add({
         name: name,
         mail: mail,

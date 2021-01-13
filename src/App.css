@@ -214,7 +214,7 @@
   grid-auto-rows: 150px;
   grid-gap: 10px;
   grid-auto-flow: dense;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 .gallery-item {

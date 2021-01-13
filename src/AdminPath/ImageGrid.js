@@ -1,12 +1,12 @@
 import React from "react";
 import useFirestore from "../hooks/useFirestore";
 
-
-const SweetGallery = ({ setSelectedImg }) => {
+const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore("sweetGallery");
+  console.log(docs);
 
   return (
-      <div className="container">
+    <div className="container">
       {docs &&
         docs.map((doc) => (
           <div className="gallery-container" key={doc.id}>
@@ -22,4 +22,4 @@ const SweetGallery = ({ setSelectedImg }) => {
   );
 };
 
-export default SweetGallery;
+export default ImageGrid;
