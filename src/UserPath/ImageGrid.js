@@ -2,22 +2,24 @@ import React from "react";
 import useFirestore from "../hooks/useFirestore";
 
 const ImageGrid = ({ setSelectedImg, selectedGallery }) => {
-  const { docs } = useFirestore(`${selectedGallery}`); 
+  const { docs } = useFirestore(`${selectedGallery}`);
   console.log(docs);
 
   return (
-    <div className="container">
+    <div>
+    <div className="img-grid">
+      
       {docs &&
         docs.map((doc) => (
-          <div className="gallery-container" key={doc.id}>
-            <div
-              className="gallery-item"
-              onClick={() => setSelectedImg(doc.url)}
-            >
-              <img className="image" src={doc.url} alt="uploaded pic" />
-            </div>
+          <div
+            className="img-wrap"
+            key={doc.id}
+            onClick={() => setSelectedImg(doc.url)}
+          >
+            <img className="image" src={doc.url} alt="uploaded pic" />
           </div>
         ))}
+    </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ import Sweet from "./Sweet";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
 
-export default function Test(props) {
+export default function AppView(props) {
   let Data = props.Data;
 
   let sliderArr = [
