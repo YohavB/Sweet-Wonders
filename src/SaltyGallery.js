@@ -12,15 +12,15 @@ const SaltyGallery = ({ setSelectedImg }) => {
   return (
     <div className="container">
       {""}
-      <div className="gallery-container  h-3">
-        <div className="gallery-item" >
+      <div className="gallery-container  ">
+        <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg1)}>
             <img src={saimg1} alt="" />
           </div>
         </div>
       </div>
 
-      <div className="gallery-container  h-2 ">
+      <div className="gallery-container  ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg2)}>
             <img src={saimg2} alt="" />
@@ -28,7 +28,7 @@ const SaltyGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg3)}>
             <img src={saimg3} alt="" />
@@ -36,7 +36,7 @@ const SaltyGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-3 ">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg4)}>
             <img src={saimg4} alt="" />
@@ -44,7 +44,7 @@ const SaltyGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg5)}>
             <img src={saimg5} alt="" />
@@ -52,7 +52,7 @@ const SaltyGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg6)}>
             <img src={saimg6} alt="" />
@@ -60,7 +60,7 @@ const SaltyGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container  h-3">
+      <div className="gallery-container">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg7)}>
             <img src={saimg7} alt="" />
@@ -68,7 +68,7 @@ const SaltyGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container w-2 h-3">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(saimg8)}>
             <img src={saimg8} alt="" />

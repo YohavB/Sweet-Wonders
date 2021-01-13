@@ -14,7 +14,7 @@ const SweetGallery = ({ setSelectedImg }) => {
   return (
     <div className="container">
       {""}
-      <div className="gallery-container h-2 ">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg1)}>
             <img src={swimg1} alt="" />
@@ -22,7 +22,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-3">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg2)}>
             <img src={swimg2} alt="" />
@@ -30,7 +30,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg3)}>
             <img src={swimg3} alt="" />
@@ -38,7 +38,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-3">
+      <div className="gallery-container">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg4)}>
             <img src={swimg4} alt="" />
@@ -46,7 +46,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg5)}>
             <img src={swimg5} alt="" />
@@ -54,7 +54,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-3">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg6)}>
             <img src={swimg6} alt="" />
@@ -62,7 +62,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2 ">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg7)}>
             <img src={swimg7} alt="" />
@@ -70,7 +70,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-3">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg8)}>
             <img src={swimg8} alt="" />
@@ -78,7 +78,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg9)}>
             <img src={swimg9} alt="" />
@@ -86,7 +86,7 @@ const SweetGallery = ({ setSelectedImg }) => {
         </div>
       </div>
 
-      <div className="gallery-container h-2">
+      <div className="gallery-container ">
         <div className="gallery-item">
           <div className="image" onClick={() => setSelectedImg(swimg10)}>
             <img src={swimg10} alt="" />

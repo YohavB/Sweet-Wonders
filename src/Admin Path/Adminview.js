@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { firebaseApp } from "../firebase";
+import { firebaseApp } from "../firebase/config";
 import { Redirect } from "react-router";
+import UploadForm from "./UploadForm";
 
 const logout = () => {
   firebaseApp
@@ -191,17 +192,14 @@ function Adminview() {
                 <option value="litre">litre</option>
                 <option value="pieces">pieces</option>
               </select>
-
-
               <button onClick={() => updateFood(value._id)}>update</button>
               <button onClick={() => deleteFood(value._id)}>Delete</button>
             </div>
           );
         })}
-
-
-
       </div>
+
+      <UploadForm />
       <button onClick={logout}>logout</button>
     </div>
   );
