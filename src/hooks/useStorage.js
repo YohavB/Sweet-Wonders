@@ -5,7 +5,7 @@ import {
   timestamp,
 } from "../firebase/config";
 
-const useStorage = (file) => {
+const useStorage = (file, selectedGallery) => {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
@@ -13,7 +13,7 @@ const useStorage = (file) => {
   useEffect(() => {
     // references
     const storageRef = projectStorage.ref(file.name);
-    const collectionRef = projectFirestore.collection("saltyGallery");
+    const collectionRef = projectFirestore.collection(`${selectedGallery}`);
 
     storageRef.put(file).on(
       "state_changed",
@@ -31,7 +31,7 @@ const useStorage = (file) => {
         setUrl(url);
       }
     );
-  }, [file]);
+  }, [file, selectedGallery], );
 
   return { progress, url, error };
 };

@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import useStorage from "../hooks/useStorage";
 
-const ProgressBar = ({ file, setFile }) => {
-  const { url, progress } = useStorage(file);
+const ProgressBar = ({ file, setFile, selectedGallery }) => {
+  const { url, progress } = useStorage(file, selectedGallery);
   
   useEffect(() => {
     if(url) {
       setFile(null)
     }
-  }, [url], setFile)
+  }, [url, setFile])
 
   return <div className="progress-bar" style={{ width: progress + "%" }}></div>;
 };

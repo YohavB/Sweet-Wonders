@@ -91,7 +91,23 @@
 
 .titleandsocial {
   overflow: hidden;
-  background-image: url("./image/sweet6.jpeg");
+  background: rgb(92, 65, 65);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(92, 65, 65, 1) 0%,
+    rgba(255, 255, 241, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(92, 65, 65, 1) 0%,
+    rgba(255, 255, 241, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(92, 65, 65, 1) 0%,
+    rgba(255, 255, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c4141",endColorstr="#fffff1",GradientType=1);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 40vh;

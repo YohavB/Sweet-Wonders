@@ -1,26 +1,13 @@
 import React, { useState } from "react";
 
-import SweetGallery from "./SweetGallery";
-import SaltyGallery from "./SaltyGallery";
-
 import sweeticon from "../image/sweet.png";
 import salticon from "../image/salty.png";
 import Modal from "./Modal";
+import ImageGrid from "../UserPath/ImageGrid";
 
 function Gallery() {
-  const [gallery, setGallery] = useState(null);
   const [selectedImg, setSelectedImg] = useState(null);
-
-  const renderGallery = () => {
-    if (gallery === null) {
-      return null;
-    }
-    return gallery ? (
-      <SweetGallery setSelectedImg={setSelectedImg} />
-    ) : (
-      <SaltyGallery setSelectedImg={setSelectedImg} />
-    );
-  };
+  const [selectedGallery, setSelectedGallery] = useState("0");
 
   return (
     <div className="gallery">
@@ -30,18 +17,20 @@ function Gallery() {
           src={sweeticon}
           alt="Check our Sweet Gallery"
           title="Check our Sweet Gallery !"
-          onClick={() => setGallery(true)}
+          onClick={() => setSelectedGallery("sweetGallery")}
         />
         <img
           className="gallery-button"
           src={salticon}
           alt="Check our Salty Gallery"
           title="Check our Salty Gallery !"
-          onClick={() => setGallery(false)}
+          onClick={() => setSelectedGallery("saltyGallery")}
         />
       </div>
-      {renderGallery()}
-      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}
+      <ImageGrid selectedGallery={selectedGallery} setSelectedImg={setSelectedImg} />
+      {selectedImg && (
+        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+      )}
     </div>
   );
 }
